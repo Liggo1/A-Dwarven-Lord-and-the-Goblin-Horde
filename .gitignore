@@ -1,0 +1,86 @@
+# Ignore the following Unity-generated files and folders
+
+# Unity3D specific folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+
+# User-specific files
+.idea/
+.vs/
+.vscode/
+
+# Windows-specific files
+Thumbs.db
+Desktop.ini
+
+# macOS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux-specific files
+.directory
+
+# JetBrains Rider
+.idea/
+
+# Visual Studio for Mac
+.vscode/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Unity Asset Store packages
+*.unitypackage
+
+# User-specific project settings
+UserSettings/
+
+# Uncomment this line if you're using Git LFS
+# *.mp4
+# *.png
+# *.psd
+
+# Ignore crash logs
+*.stackdump
+
+# Ignore the Unity Cache files
+*.pdb
+*.mdb
+*.exe
+*.dll
+
+# Logs
+*.log
+
+# Ignore large files
+# To ignore files greater than 100MB, add your file types here
+# Example: "*.dll" (or more specific files like "Library/PackageCache/.../*.dll")
+
+# Build results and generated folders (e.g. build outputs)
+Build/
+Builds/
+
+# Files created by the build process (such as logs, unitypackage files)
+*.log
+*.zip
+
+# Files from Unity package manager
+# Uncomment if you're not using the package manager
+# Packages/
+
+# Ignore certain hidden files in folders
+.vscode/
+
+# Ignore temp folder
+Temp/
+
+# Ignore git files
+.git/
