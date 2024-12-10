@@ -337,11 +337,11 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1584369477}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &588181480
 GameObject:
@@ -372,8 +372,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69df9c61c88b73748bf950be9a6c4fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _width: 23
-  _height: 10
+  _width: 100
+  _height: 100
   _tilePrefab: {fileID: 8803785207651562364, guid: 51a7d13b43cd13f4f8abb817abee5c4b, type: 3}
   _cam: {fileID: 519420032}
 --- !u!4 &588181482
@@ -503,11 +503,12 @@ Transform:
   m_GameObject: {fileID: 1584369476}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11, y: 7, z: -1}
+  m_LocalPosition: {x: 50, y: 90, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 429733581}
+  - {fileID: 519420032}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1584369478
@@ -614,7 +615,6 @@ PolygonCollider2D:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 588181482}
   - {fileID: 1584369477}

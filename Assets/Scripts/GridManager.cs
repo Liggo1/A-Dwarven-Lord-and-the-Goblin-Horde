@@ -39,8 +39,8 @@ public class GridManager : MonoBehaviour {
                 _tiles[new Vector2(x, y)] = spawnedTile;
                 
                 
-                if( _tiles[new Vector2(x,y)].name == "Tile 11 7" || _tiles[new Vector2(x,y)].name == "Tile 12 7" 
-                || _tiles[new Vector2(x,y)].name == "Tile 10 7"|| _tiles[new Vector2(x,y)].name == "Tile 11 8"){
+                if( _tiles[new Vector2(x,y)].name == "Tile 50 90" || _tiles[new Vector2(x,y)].name == "Tile 51 90" 
+                || _tiles[new Vector2(x,y)].name == "Tile 49 90"|| _tiles[new Vector2(x,y)].name == "Tile 50 91"){
                     
                     spawnedTile.tag = "startingTile";
                     //_tiles[new Vector2(x,y)].ClearTile(true);
@@ -50,7 +50,9 @@ public class GridManager : MonoBehaviour {
         }
 
         // Adjust camera position to fit the grid
-        _cam.transform.position = new Vector3((float)_width / 2 - 0.5f, (float)_height / 2 - 0.5f, -10);
+        //_cam.transform.position = new Vector3((float)_width / 2 - 0.5f, (float)_height / 2 - 0.5f, -10);
+        //_cam.transform.position = player.position;
+       
     }
 
     public Tile GetTileAtPosition(Vector2 pos) {
