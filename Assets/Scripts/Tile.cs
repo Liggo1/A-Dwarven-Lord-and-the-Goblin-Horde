@@ -1,5 +1,6 @@
 using UnityEngine;
 
+
 public class Tile : MonoBehaviour
 {
     [SerializeField] private Color _baseColor, _offsetColor;
@@ -11,9 +12,23 @@ public class Tile : MonoBehaviour
     private void Start()
     {
         _collider = GetComponent<BoxCollider2D>(); // Ensure the tile has a 2D collider
+        
         if (gameObject.tag == "startingTile"){
             ClearTile();
         }
+        else{
+           // Generate a random number between 0 and 100 using UnityEngine.Random
+            int chance = Mathf.FloorToInt(UnityEngine.Random.Range(0f, 100f));
+
+            if (chance < 1)
+            {
+                _renderer.color = new Color(0.75f, 0.75f, 0.75f);
+                gameObject.tag = "Ore";
+                
+            }
+
+        }
+        
         
         
     }
@@ -32,6 +47,10 @@ public class Tile : MonoBehaviour
 
     void OnMouseDown() {
         // When the tile is clicked, clear it by disabling the collider
+       
+        if(gameObject.tag == "Ore"){
+            print("+1 Iron Ore");
+        }
         ClearTile();
     }
 
