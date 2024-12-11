@@ -49,7 +49,8 @@ public class Tile : MonoBehaviour
         // When the tile is clicked, clear it by disabling the collider
        
         if(gameObject.tag == "Ore"){
-            print("+1 Iron Ore");
+            ResourceManager.Instance.numIron++;
+            print(ResourceManager.Instance.numIron);
         }
         ClearTile();
     }
